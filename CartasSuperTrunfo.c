@@ -1,22 +1,70 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+int main (){
+
+
+char cidade[20], cidade2[20];
+char estado[10], estado2[10];
+char codigo[20],codigo2[20];
+int populacao, populacao2;  
+int turistico, turistico2;
+float area,area2;
+float pib, pib2;
+
+
+//carta 1 do jogo
+
+printf ("Primeira letra do Estado:\n");
+scanf ("%s",&estado);
+printf("Codigo da carta de 1 à 4 (ex A01, A03):\n");
+scanf("%s",&codigo);
+printf ("Nome da Cidade:\n");
+scanf ("%s",&cidade);
+printf ("População da Cidade:\n");
+scanf ("%f",&populacao);
+printf ("Pontos Turisticos:\n");
+scanf ("%d",&turistico);
+printf ("Área em km²:\n");
+scanf ("%f",&area);
+printf ("Pib:\n");
+scanf ("%f",&pib);
+
+//carta 1 do jogo
+
+printf ("Primeira letra do Estado:\n");
+scanf ("%s",&estado2);
+printf("Codigo da carta de 1 à 4 (ex A01, A03):\n");
+scanf("%s",&codigo2);
+printf ("Nome da Cidade:\n");
+scanf ("%s",&cidade2);
+printf ("População da Cidade:\n");
+scanf ("%f",&populacao2);
+printf ("Pontos Turisticos:\n");
+scanf ("%d",&turistico2);
+printf ("Área em km²:\n");
+scanf ("%f",&area2);
+printf ("Pib:\n");
+scanf ("%f",&pib2);
+
+printf ("Carta 1:\n");
+printf ("Estado:%s\n" ,estado);
+printf ("Codigo:%s\n" ,codigo);
+printf ("Cidade:%s\n" ,cidade);
+printf ("População:%f\n",populacao);
+printf ("Area:%f\n",area);
+printf ("Pib:%f\n",pib);
+printf ("Pontos Turisticos:%d\n",turistico);
+
+
+printf ("Carta 2:\n");
+printf ("Estado:%s\n" ,estado2);
+printf ("Codigo:%s\n" ,codigo2);
+printf ("Cidade:%s\n" ,cidade2);
+printf ("População:%f\n",populacao2);
+printf ("Area:%f\n",area2);
+printf ("Pib:%f\n",pib2);
+printf ("Pontos Turisticos:%d\n",turistico2);
 
     return 0;
 }
